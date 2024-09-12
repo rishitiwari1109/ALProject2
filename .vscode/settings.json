@@ -3,5 +3,6 @@
     "al.codeAnalyzers": [
         "${CodeCop}",
         
-    ]
+    ],
+    "al.enableCodeActions": true
 }
