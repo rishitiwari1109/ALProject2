@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="BC Dev Learning">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3534050887 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3877724864 - Method 1439528424 - NamedType 1398852855" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Would you like to replace the existing picture ?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Image Management - Method ImportItemPicture - NamedType OverrideImageQst</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 712333111 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Customers to XML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Customer XML - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3744062577 - Action 2034514482 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Export to XML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer List Ext - Action ExportToXML - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3744062577 - Action 2034514482 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2901867346">
+          <source>Export to XML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Customer List Ext - Action ExportToXML - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1388565512 - Action 1439528424 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Import Item Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Picture Extension - Action ImportItemPicture - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1388565512 - Action 1439528424 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Import Item Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Picture Extension - Action ImportItemPicture - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

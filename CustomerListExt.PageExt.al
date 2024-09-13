@@ -1,16 +1,39 @@
-// Welcome to your new AL extension.
-// Remember that object names and IDs should be unique across all extensions.
-// AL snippets start with t*, like tpageext - give them a try and happy coding!
-
-namespace DefaultPublisher.ALProject2;
-
-using Microsoft.Sales.Customer;
-
-
-pageextension 50100 CustomerListExt extends "Customer List"
+pageextension 50000 "Customer List Ext" extends "Customer List"
 {
-    trigger OnOpenPage();
-    begin
-        Message('App published: Hello world');
-    end;
+    layout
+    {
+        // Add changes to page layout here
+    }
+
+    actions
+    {
+        addafter("&Customer")
+        {
+            action(ExportToXML)
+            {
+                Caption = 'Export to XML';
+                ToolTip = 'Export to XML';
+                ApplicationArea = All;
+                Image = XMLFile;
+                trigger OnAction()
+                var
+                    TempBlob: Codeunit "Temp Blob";
+                    OutStr: OutStream;
+                    Instr: InStream;
+                    CustomerXML: XmlPort "Customer XML";
+                    FileName: Text;
+                begin
+                    TempBlob.CreateOutStream(OutStr);
+                    CustomerXML.SetDestination(OutStr);
+                    CustomerXML.Export();
+                    TempBlob.CreateInStream(Instr);
+                    FileName := 'Customers.xml';
+                    File.DownloadFromStream(Instr, 'Download', '', '', FileName);
+                end;
+            }
+        }
+    }
+
+    var
+        myInt: Integer;
 }
