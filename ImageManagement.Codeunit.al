@@ -15,7 +15,7 @@ codeunit 50000 "Image Management"
             if Picture.Count > 0 then
                 IF NOT (Confirm(OverrideImageQst, false)) then
                     EXIT;
-            IF File.UploadIntoStream('Import File', '', 'All Files(*.*)|*.*', FromFileName, PicInstream) then begin
+            if File.UploadIntoStream('Import File', '', 'All Files(*.*)|*.*', FromFileName, PicInstream) then begin
                 Clear(Picture);
                 Picture.ImportStream(PicInstream, FromFileName);
                 Modify(true);

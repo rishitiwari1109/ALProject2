@@ -34,6 +34,4 @@ pageextension 50000 "Customer List Ext" extends "Customer List"
         }
     }
 
-    var
-        myInt: Integer;
 }
