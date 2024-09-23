@@ -25,6 +25,4 @@ pageextension 50110 "Item Card Picture Extension" extends "Item Card"
         }
     }
 
-    var
-        myInt: Integer;
 }

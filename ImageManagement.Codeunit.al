@@ -11,15 +11,13 @@ codeunit 50000 "Image Management"
         FromFileName: Text;
         OverrideImageQst: Label 'Would you like to replace the existing picture ?';
     begin
-        with Item do begin
-            if Picture.Count > 0 then
-                IF NOT (Confirm(OverrideImageQst, false)) then
-                    EXIT;
-            if File.UploadIntoStream('Import File', '', 'All Files(*.*)|*.*', FromFileName, PicInstream) then begin
-                Clear(Picture);
-                Picture.ImportStream(PicInstream, FromFileName);
-                Modify(true);
-            end;
+        if Item.Picture.Count > 0 then
+            if not (Confirm(OverrideImageQst, false)) then
+                exit;
+        if File.UploadIntoStream('Import File', '', 'All Files(*.*)|*.*', FromFileName, PicInstream) then begin
+            Clear(Item.Picture);
+            Item.Picture.ImportStream(PicInstream, FromFileName);
+            Item.Modify(true);
         end;
     end;
 }
