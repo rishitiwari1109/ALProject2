@@ -18,9 +18,9 @@ pageextension 50000 "Customer List Ext" extends "Customer List"
                 trigger OnAction()
                 var
                     TempBlob: Codeunit "Temp Blob";
+                    CustomerXML: XmlPort "Customer XML";
                     OutStr: OutStream;
                     Instr: InStream;
-                    CustomerXML: XmlPort "Customer XML";
                     FileName: Text;
                 begin
                     TempBlob.CreateOutStream(OutStr);
